@@ -1,0 +1,27 @@
+# =============================================================================
+#  AI 智能食谱买菜平台 · Python 依赖
+#  Python >= 3.11（本机验证环境 3.14.7）
+#  安装： python -m pip install -r requirements.txt
+#  开发： python -m pip install -r requirements-dev.txt
+# =============================================================================
+
+# --- Web 框架 ---
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.32,<1.0
+
+# --- 数据层 ---
+# SQLAlchemy 2.x 原生支持 SQLite；schema.sql 仍是建表事实来源
+sqlalchemy>=2.0.36,<3.0
+alembic>=1.14,<2.0
+
+# --- 数据校验 / 配置 ---
+pydantic>=2.9,<3.0
+pydantic-settings>=2.6,<3.0
+
+# --- 工具 ---
+python-dotenv>=1.0,<2.0
+python-multipart>=0.0.12,<1.0
+httpx>=0.27,<1.0          # 比价等外部接口调用
+
+# --- AI（DeepSeek 走 OpenAI 兼容协议：只换 base_url，SDK 不变）---
+openai>=1.40,<4.0

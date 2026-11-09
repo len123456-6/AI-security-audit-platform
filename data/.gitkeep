@@ -1,0 +1,1 @@
+# 运行时数据库目录：cook.db 由 app/db/init_db.py 执行 schema.sql 生成，不入版本库。

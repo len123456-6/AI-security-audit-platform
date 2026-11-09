@@ -1,0 +1,40 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- 数据库（本地库不入库，靠 schema.sql + seed 重建）----
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+data/*
+!data/.gitkeep
+
+# ---- 环境变量（示例文件 .env.example 需要提交）----
+.env
+.env.*
+!.env.example
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- 本地临时日志 ----
+*.log
+
+# ---- 根目录临时测试产物（_ 开头的脚本 / 输出文件）----
+_smoke*
+_*.txt
+_*.json
